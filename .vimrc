@@ -37,7 +37,7 @@ set noswapfile
 set fileformats=unix,dos,mac
 set laststatus=2
 set expandtab
-set softtabstop=2 tabstop=2 shiftwidth=2
+set softtabstop=4 tabstop=4 shiftwidth=4
 set ruler
 set t_Co=256
 
