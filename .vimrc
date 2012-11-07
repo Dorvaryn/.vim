@@ -39,40 +39,12 @@ set laststatus=2
 set expandtab
 set softtabstop=2 tabstop=2 shiftwidth=2
 set ruler
+set t_Co=256
 
 let g:molokai_original = 0
 
-"""""""""""""""""""" KEYBINDINGS
-
-map cc <leader>c<space>
-map  # {v}! par 72<CR>
-map  & {v}! par 72j<CR>
-map  <F6> :setlocal spell! spelllang=en<CR>
-map  <F12> :set invhls<CR>
-cmap <C-g> <C-u><ESC>
-
-"""""""""""""""""""" PLUGINS
-
-" Installed:
-"   NERD_Commenter
-"   CtrlP
-"   Gundo
-"   matchit
-
-nmap <c-u> :GundoToggle<cr>
-
-let g:ctrlp_map = '<c-o>'
-let g:ctrlp_working_path_mode = 0
 
 """""""""""""""""""" FILES SPECIFIC
-
-au BufRead mutt-*        set ft=mail
-au BufRead mutt-*        set invhls
-au bufNewFile *.html 0r ~/.vim/templates/html.txt
-au BufRead,BufNewFile *.jsm setfiletype javascript
-au BufRead,BufNewFile *.xul setfiletype xml
-
-autocmd filetype html,xml set listchars-=tab:>.
 
 " donner des droits d'exécution si le fichier commence par #! et contient
 " /bin/ dans son chemin
