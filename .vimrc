@@ -1,6 +1,5 @@
 """""""""""""""""""" GLOBAL
 let mapleader=","
-colorscheme molokai
 set gfn=terminus
 set go=
 
